@@ -1,0 +1,116 @@
+{
+  "package": "inno_medical_bedflow",
+  "trl_claim": 4,
+  "data": "synthetic only",
+  "all_pass": true,
+  "runs": [
+    {
+      "seed": 0,
+      "metrics": {
+        "mae_gain": 0.1848,
+        "overload_recall": 0.7875,
+        "overload_precision": 0.643,
+        "discharge_precision": 1.0,
+        "n_overload_days": 574
+      },
+      "criteria": [
+        {
+          "metric": "mae_gain",
+          "op": ">=",
+          "threshold": 0.1,
+          "value": 0.1848,
+          "pass": true,
+          "description": "7-day census MAE improvement over persistence"
+        },
+        {
+          "metric": "overload_recall",
+          "op": ">=",
+          "threshold": 0.7,
+          "value": 0.7875,
+          "pass": true,
+          "description": "recall of days above 95% occupancy (alert at 90% forecast)"
+        },
+        {
+          "metric": "overload_precision",
+          "op": ">=",
+          "threshold": 0.5,
+          "value": 0.643,
+          "pass": true,
+          "description": "precision of overload alerts"
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "metrics": {
+        "mae_gain": 0.1478,
+        "overload_recall": 0.7754,
+        "overload_precision": 0.5878,
+        "discharge_precision": 1.0,
+        "n_overload_days": 561
+      },
+      "criteria": [
+        {
+          "metric": "mae_gain",
+          "op": ">=",
+          "threshold": 0.1,
+          "value": 0.1478,
+          "pass": true,
+          "description": "7-day census MAE improvement over persistence"
+        },
+        {
+          "metric": "overload_recall",
+          "op": ">=",
+          "threshold": 0.7,
+          "value": 0.7754,
+          "pass": true,
+          "description": "recall of days above 95% occupancy (alert at 90% forecast)"
+        },
+        {
+          "metric": "overload_precision",
+          "op": ">=",
+          "threshold": 0.5,
+          "value": 0.5878,
+          "pass": true,
+          "description": "precision of overload alerts"
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "metrics": {
+        "mae_gain": 0.1422,
+        "overload_recall": 0.7894,
+        "overload_precision": 0.5464,
+        "discharge_precision": 1.0,
+        "n_overload_days": 470
+      },
+      "criteria": [
+        {
+          "metric": "mae_gain",
+          "op": ">=",
+          "threshold": 0.1,
+          "value": 0.1422,
+          "pass": true,
+          "description": "7-day census MAE improvement over persistence"
+        },
+        {
+          "metric": "overload_recall",
+          "op": ">=",
+          "threshold": 0.7,
+          "value": 0.7894,
+          "pass": true,
+          "description": "recall of days above 95% occupancy (alert at 90% forecast)"
+        },
+        {
+          "metric": "overload_precision",
+          "op": ">=",
+          "threshold": 0.5,
+          "value": 0.5464,
+          "pass": true,
+          "description": "precision of overload alerts"
+        }
+      ]
+    }
+  ]
+}
