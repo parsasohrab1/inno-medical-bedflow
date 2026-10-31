@@ -1,0 +1,5 @@
+ward,beds,mean_los
+icu,12,4.5
+surgery,30,5.0
+internal,40,6.0
+ortho,20,7.0
